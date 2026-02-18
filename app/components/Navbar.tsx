@@ -28,13 +28,13 @@ export default function Navbar() {
           <Link href="/dashboard" className="hover:text-white transition">
             Dashboard
           </Link>
-          <Link href="/quiz" className="hover:text-white transition">
+          <Link href="/Quiz" className="hover:text-white transition">
             Quiz
           </Link>
-          <Link href="/about" className="hover:text-white transition">
+          <Link href="/About" className="hover:text-white transition">
             About
           </Link>
-          <Link href="/contact" className="hover:text-white transition">
+          <Link href="/Contact" className="hover:text-white transition">
             Contact
           </Link>
         </nav>
