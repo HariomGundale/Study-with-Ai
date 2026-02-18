@@ -1,25 +1,46 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-sm border-b">
+    <header className="bg-slate-900/90 backdrop-blur-md border-b border-slate-700">
+
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-indigo-600">
-          StudyWith AI
+
+        <Link href="/" className="flex items-center gap-3">
+
+          <Image
+            src="/logo.svg"   // change to logo.png if png
+            alt="StudyWith AI Logo"
+            width={40}
+            height={40}
+            className="rounded-md"
+          />
+
+          <span className="text-xl font-bold text-blue-400">
+            StudyWith AI
+          </span>
+
         </Link>
 
-        <div className="flex gap-6 text-slate-700 font-medium">
-          <Link href="/dashboard" className="hover:text-indigo-600 transition">
+        {/* Navigation */}
+        <nav className="flex gap-6 text-slate-300 font-medium">
+          <Link href="/dashboard" className="hover:text-white transition">
             Dashboard
           </Link>
-          <Link href="/history" className="hover:text-indigo-600 transition">
-            History
+          <Link href="/quiz" className="hover:text-white transition">
+            Quiz
           </Link>
-          <Link href="/login" className="hover:text-indigo-600 transition">
-            Login
+          <Link href="/about" className="hover:text-white transition">
+            About
           </Link>
-        </div>
+          <Link href="/contact" className="hover:text-white transition">
+            Contact
+          </Link>
+        </nav>
+
       </div>
-    </nav>
+
+    </header>
   );
 }

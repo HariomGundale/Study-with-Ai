@@ -1,0 +1,16 @@
+<svg
+  width="42"
+  height="42"
+  viewBox="0 0 200 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g stroke="#3B82F6" strokeWidth="6" strokeLinejoin="round">
+    <polygon points="100,10 170,60 150,150 50,150 30,60" />
+    <line x1="100" y1="10" x2="150" y2="150" />
+    <line x1="100" y1="10" x2="50" y2="150" />
+    <line x1="30" y1="60" x2="170" y2="60" />
+    <line x1="30" y1="60" x2="150" y2="150" />
+    <line x1="170" y1="60" x2="50" y2="150" />
+  </g>
+</svg>
