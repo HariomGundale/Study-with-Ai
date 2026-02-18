@@ -15,7 +15,7 @@ export default function Home() {
 
         <Link
           href="/dashboard"
-          className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition"
+          className="bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition"
         >
           Start Learning 🚀
         </Link>
