@@ -10,14 +10,14 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3">
 
           <Image
-            src="/logo.svg"   // change to logo.png if png
+            src="/logo.png"   // change to logo.png if png
             alt="StudyWith AI Logo"
-            width={40}
-            height={40}
-            className="rounded-md"
+            width={50}
+            height={50}
+            className="rounded-full object-cover"
           />
 
-          <span className="text-xl font-bold text-blue-400">
+          <span className="text-xl font-bold text-white">
             StudyWith AI
           </span>
 
