@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hackathon Project Title
+
+## Project Description
+Provide a brief description of what your project is about. What problems does it solve? Why is it important?
+
+## Features
+- List out the main features of your project. 
+- Bullet points help convey information.
+
+## Tech Stack
+- **Frontend:** List technologies used in the frontend of the application.
+- **Backend:** List technologies used in the backend of the application.
+- **Database:** List database technologies used.
+- Any other technologies you used (e.g., libraries, frameworks).
 
 ## Getting Started
+Provide step-by-step instructions on how to get your development environment set up. This often includes:
+1. Cloning the repository
+2. Installing dependencies
+3. Any environment variables that need to be set
 
-First, run the development server:
+## Project Structure
+Explain the structure of your project, so others can navigate easily. Include information on folders and what they contain.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage Examples
+Give examples of how to use your project. Include any relevant commands, API endpoints, or screenshots if applicable.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Hackathon Details
+Details of the hackathon including:
+- Name of the hackathon
+- Date
+- Location (if applicable)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing Guidelines
+Information for contributors on how to contribute to the project, including how to run tests, pull requests, code style guidelines, etc.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Team Information
+List of team members and their roles.
 
-## Learn More
+## License
+Include information about the license under which the project is distributed.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## SDG-4 Commitment
+Describe how your project aligns with Sustainable Development Goal 4: Quality Education.
