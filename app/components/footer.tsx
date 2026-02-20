@@ -6,7 +6,7 @@ import { Github, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white border-t border-slate-800">
+    <footer className="mt-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white border-t border-slate-800">
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
