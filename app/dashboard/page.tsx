@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { jsPDF } from "jspdf";
 
 export default function Dashboard() {
   const [text, setText] = useState("");
@@ -9,6 +10,7 @@ export default function Dashboard() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [resultType, setResultType] = useState("");
+  const [topic, setTopic] = useState("");
 
   const handleAction = async (type: string) => {
     if (!text) {
@@ -43,6 +45,42 @@ export default function Dashboard() {
     setLoading(false);
   };
 
+
+
+const exportToPDF = () => {
+  if (!result) return;
+
+  const doc = new jsPDF();
+
+  const pageWidth = doc.internal.pageSize.getWidth();
+
+  // Header Title
+  doc.setFont("Times New Roman", "bold");
+  doc.setFontSize(18);
+  doc.text("StudyWith AI", pageWidth / 2, 20, { align: "center" });
+
+  // Subtitle
+  doc.setFontSize(12);
+  doc.setFont("Times New Roman", "normal");
+  doc.text(
+    `Generated ${resultType.toUpperCase()} Document`,
+    pageWidth / 2,
+    28,
+    { align: "center" }
+  );
+
+  // Divider Line
+  doc.line(20, 32, pageWidth - 20, 32);
+
+  // Main Content
+  doc.setFontSize(12);
+  const lines = doc.splitTextToSize(result, 170);
+  doc.text(lines, 20, 75);
+
+  // Save
+  doc.save(`StudyWithAI-${topic || "Output"}-${resultType}.pdf`);
+};
+
   return (
     <div className="min-h-screen bg-slate-950 py-16 px-6 text-white">
       <motion.div
@@ -52,25 +90,23 @@ export default function Dashboard() {
         className="max-w-4xl mx-auto"
       >
         <h1 className="text-4xl font-bold mb-10 text-center">
-           Notes Summarizer
+          Notes Summarizer
         </h1>
 
         {/* ✨ HALF-SIDE GLOW TEXTAREA */}
         <div className="relative w-full mb-10">
-
           {/* full glow */}
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute left-0 top-0 bottom-0 w-full rounded-3xl">
-    
-               {/* Neon border layer */}
-                  <div className="absolute inset-0 rounded-3xl 
+              {/* Neon border layer */}
+              <div
+                className="absolute inset-0 rounded-3xl 
                       bg-gradient-to-b from-blue-400 via-indigo-500 to-blue-600 
-                      opacity-90 blur-md">
-                  </div>
+                      opacity-90 blur-md"
+              ></div>
 
               {/* Mask to keep glow only at boundary */}
               <div className="absolute inset-[2px] rounded-3xl bg-[#0b0f1a]"></div>
-
             </div>
           </div>
 
@@ -127,25 +163,24 @@ export default function Dashboard() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="relative mt-10"
+            className="bg-slate-900/60 backdrop-blur-md border border-slate-700 p-6 rounded-2xl shadow-lg mt-8"
           >
+            <h2 className="text-xl font-semibold mb-4 text-blue-400 capitalize">
+              {resultType === "summary" && "Summary"}
+              {resultType === "keypoints" && "Key Points"}
+              {resultType === "simplify" && "Simplified Version"}
+            </h2>
 
-            {/* Right glow */}
-            <div className="absolute -right-2 top-0 bottom-0 w-56 bg-gradient-to-l from-indigo-500 to-transparent rounded-r-3xl blur-2xl opacity-70"></div>
+            <p className="whitespace-pre-line text-slate-300 leading-relaxed">
+              {result}
+            </p>
 
-            {/* Result box */}
-            <div className="relative bg-slate-900/70 backdrop-blur-xl border border-slate-700 p-6 rounded-3xl shadow-lg">
-              <h2 className="text-xl font-semibold mb-4 text-blue-400 capitalize">
-                {resultType === "summary" && "Summary"}
-                {resultType === "keypoints" && "Key Points"}
-                {resultType === "simplify" && "Simplified Version"}
-              </h2>
-
-              <p className="whitespace-pre-line text-slate-300 leading-relaxed">
-                {result}
-              </p>
-            </div>
+            <button
+              onClick={exportToPDF}
+              className="mt-6 bg-green-600 hover:bg-green-700 px-6 py-2 rounded-xl transition-all duration-300 hover:scale-105"
+            >
+              Export as PDF
+            </button>
           </motion.div>
         )}
       </motion.div>
