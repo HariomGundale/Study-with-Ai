@@ -1,44 +1,68 @@
-# Hackathon Project Title
+# Hackathon Project
 
-## Project Description
-Provide a brief description of what your project is about. What problems does it solve? Why is it important?
+## Project Overview
+This hackathon project aims to provide an innovative solution to [briefly describe the purpose or problem the project addresses]. The project is designed to create [mention the functionality of the application].
 
 ## Features
-- List out the main features of your project. 
-- Bullet points help convey information.
+- Feature 1: [Description]
+- Feature 2: [Description]
+- Feature 3: [Description]
+- Feature 4: [Description]
 
 ## Tech Stack
-- **Frontend:** List technologies used in the frontend of the application.
-- **Backend:** List technologies used in the backend of the application.
-- **Database:** List database technologies used.
-- Any other technologies you used (e.g., libraries, frameworks).
+- **Frontend:** [Frontend technologies used]
+- **Backend:** [Backend technologies used]
+- **Database:** [Database used]
+- **Other Tools:** [Other tools, libraries, or frameworks used]
 
-## Getting Started
-Provide step-by-step instructions on how to get your development environment set up. This often includes:
-1. Cloning the repository
-2. Installing dependencies
-3. Any environment variables that need to be set
+## Installation Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HariomGundale/Study-with-Ai.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Study-with-Ai
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Set up environment variables (if any):
+   - Create a `.env` file in the root directory and add the required variables.
+5. Run the application:
+   ```bash
+   npm start
+   ```
 
-## Project Structure
-Explain the structure of your project, so others can navigate easily. Include information on folders and what they contain.
+## Usage
+- [Add usage instructions or examples of how to utilize the application.]
 
-## Usage Examples
-Give examples of how to use your project. Include any relevant commands, API endpoints, or screenshots if applicable.
+## Folder Structure
+```
+Study-with-Ai/
+├── src/
+│   ├── components/  # React components
+│   ├── pages/       # Application pages
+│   └── utils/       # Utility functions
+├── public/          # Static assets
+└── README.md        # Project documentation
+```
 
-## Hackathon Details
-Details of the hackathon including:
-- Name of the hackathon
-- Date
-- Location (if applicable)
+## Contribution Guidelines
+1. Fork the repository.
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a Pull Request.
 
-## Contributing Guidelines
-Information for contributors on how to contribute to the project, including how to run tests, pull requests, code style guidelines, etc.
-
-## Team Information
-List of team members and their roles.
-
-## License
-Include information about the license under which the project is distributed.
-
-## SDG-4 Commitment
-Describe how your project aligns with Sustainable Development Goal 4: Quality Education.
+Feel free to ask questions and seek support in the project's Slack channel or via GitHub issues. Let's build something awesome together!
