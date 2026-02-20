@@ -68,15 +68,13 @@ export default function Contact() {
         >
           Have questions or suggestions? We'd love to hear from you.
         </motion.p>
-
         <motion.form
           onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="bg-slate-900/60 backdrop-blur-lg border border-slate-800 shadow-2xl rounded-3xl p-10 space-y-6"
-        >
-
+        >  
           <input
             type="text"
             name="name"
@@ -113,7 +111,6 @@ export default function Contact() {
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
-
         </motion.form>
       </div>
     </main>

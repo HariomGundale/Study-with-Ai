@@ -52,7 +52,7 @@ export default function Dashboard() {
         className="max-w-4xl mx-auto"
       >
         <h1 className="text-4xl font-bold mb-10 text-center">
-          AI Note Summarizer
+           Notes Summarizer
         </h1>
 
         {/* ✨ HALF-SIDE GLOW TEXTAREA */}
