@@ -23,23 +23,15 @@ export default function QuizPage() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [history, setHistory] = useState<any[]>([]);
 
-  // ========================
-  // SESSION STORAGE LOAD
-  // ========================
   useEffect(() => {
     const saved = sessionStorage.getItem("quiz-history");
-    if (saved) {
-      setHistory(JSON.parse(saved));
-    }
+    if (saved) setHistory(JSON.parse(saved));
   }, []);
 
   useEffect(() => {
     sessionStorage.setItem("quiz-history", JSON.stringify(history));
   }, [history]);
 
-  // ========================
-  // PER QUESTION TIMER (30s)
-  // ========================
   useEffect(() => {
     if (!questions.length || completed) return;
 
@@ -67,11 +59,7 @@ export default function QuizPage() {
       });
 
       const data = await res.json();
-
-      if (!res.ok || !Array.isArray(data.quiz)) {
-        console.error(data);
-        return;
-      }
+      if (!res.ok || !Array.isArray(data.quiz)) return;
 
       setQuestions(data.quiz);
       setCurrent(0);
@@ -131,36 +119,37 @@ export default function QuizPage() {
       : 0;
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white py-20 px-6">
-      <div className="max-w-3xl mx-auto space-y-8">
+    <main className="min-h-screen bg-slate-950 text-white py-14 sm:py-20 px-4 sm:px-6">
+      <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8">
 
-        <h1 className="text-4xl font-bold text-blue-500 text-center">
-            Quiz Generator
+        {/* Heading */}
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 text-center">
+          Quiz Generator
         </h1>
 
+        {/* Form */}
         {!questions.length && (
-          <div className="bg-slate-900/60 p-8 rounded-2xl space-y-4">
-
+          <div className="bg-slate-900/60 p-5 sm:p-8 rounded-2xl space-y-4">
             <input
               type="text"
               placeholder="Standard (e.g., 10th, 12th)"
               value={standard}
               onChange={(e) => setStandard(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700"
+              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-sm sm:text-base"
             />
 
             <input
               type="text"
-              placeholder="Enter Topic (e.g., Algebra, Physics)"
+              placeholder="Enter Topic (e.g., Algebra)"
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700"
+              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-sm sm:text-base"
             />
 
             <select
               value={difficulty}
               onChange={(e) => setDifficulty(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700"
+              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-sm sm:text-base"
             >
               <option value="easy">Easy</option>
               <option value="medium">Medium</option>
@@ -169,30 +158,34 @@ export default function QuizPage() {
 
             <button
               onClick={generateQuiz}
-              className="w-full bg-blue-600 py-3 rounded-xl hover:bg-blue-700"
+              className="w-full bg-blue-600 py-3 rounded-xl hover:bg-blue-700 text-sm sm:text-base"
             >
               {loading ? "Generating..." : "Generate Quiz"}
             </button>
           </div>
         )}
 
+        {/* Quiz Card */}
         {questions.length > 0 && !completed && (
-          <div className="bg-slate-900/60 p-8 rounded-2xl space-y-6">
+          <div className="bg-slate-900/60 p-5 sm:p-8 rounded-2xl space-y-5 sm:space-y-6">
 
-            {/* Progress Bar */}
-            <div className="w-full bg-slate-800 h-3 rounded-full">
+            <div className="w-full bg-slate-800 h-2 rounded-full">
               <motion.div
-                className="bg-blue-500 h-3 rounded-full"
+                className="bg-blue-500 h-2 rounded-full"
                 animate={{ width: `${progress}%` }}
               />
             </div>
 
-            {/* Timer */}
-            <div className="text-right text-red-400 font-bold">
-              ⏱ {timeLeft}s
+            <div className="flex justify-between items-center text-sm sm:text-base">
+              <span>
+                Question {current + 1} / {questions.length}
+              </span>
+              <span className="text-red-400 font-semibold">
+                ⏱ {timeLeft}s
+              </span>
             </div>
 
-            <h2 className="text-xl">
+            <h2 className="text-base sm:text-lg md:text-xl leading-relaxed">
               {questions[current].question}
             </h2>
 
@@ -205,7 +198,7 @@ export default function QuizPage() {
                     key={opt}
                     disabled={showAnswer}
                     onClick={() => setSelected(opt)}
-                    className={`w-full p-3 rounded-xl border transition ${
+                    className={`w-full p-3 rounded-xl border transition text-sm sm:text-base ${
                       showAnswer
                         ? opt === correct
                           ? "bg-green-600 border-green-600"
@@ -227,45 +220,47 @@ export default function QuizPage() {
               <button
                 disabled={!selected}
                 onClick={handleNext}
-                className="w-full bg-blue-600 py-3 rounded-xl"
+                className="w-full bg-blue-600 py-3 rounded-xl text-sm sm:text-base"
               >
                 Submit
               </button>
             )}
-
           </div>
         )}
 
+        {/* Completed */}
         {completed && (
-          <div className="bg-slate-900/60 p-8 rounded-2xl text-center space-y-4">
-            <h2 className="text-2xl text-blue-400">
+          <div className="bg-slate-900/60 p-6 sm:p-8 rounded-2xl text-center space-y-3 sm:space-y-4">
+            <h2 className="text-xl sm:text-2xl text-blue-400">
               Quiz Completed 🎉
             </h2>
-            <p>
+            <p className="text-sm sm:text-base">
               Score: {score} / {questions.length}
             </p>
-            <p>Percentage: {percentage}%</p>
+            <p className="text-sm sm:text-base">
+              Percentage: {percentage}%
+            </p>
 
             <button
               onClick={() => {
                 setQuestions([]);
                 setCompleted(false);
               }}
-              className="bg-blue-600 px-6 py-2 rounded-xl"
+              className="bg-blue-600 px-6 py-2 rounded-xl text-sm sm:text-base"
             >
               New Quiz
             </button>
           </div>
         )}
 
-        {/* SESSION HISTORY */}
+        {/* History */}
         {history.length > 0 && (
-          <div className="bg-slate-900/60 p-6 rounded-2xl">
-            <h3 className="text-lg text-blue-400 mb-3">
+          <div className="bg-slate-900/60 p-5 sm:p-6 rounded-2xl">
+            <h3 className="text-base sm:text-lg text-blue-400 mb-3">
               Session History
             </h3>
             {history.map((item, i) => (
-              <p key={i} className="text-slate-400">
+              <p key={i} className="text-slate-400 text-xs sm:text-sm">
                 {item.standard} - {item.topic} → {item.score}/{item.total}
               </p>
             ))}
