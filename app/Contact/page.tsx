@@ -13,7 +13,9 @@ export default function Contact() {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -22,7 +24,12 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (loading) return;
+
     setLoading(true);
+
+    const toastId = toast.loading("Sending message...");
 
     try {
       const res = await fetch("/api/message", {
@@ -33,6 +40,8 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
 
+      toast.dismiss(toastId);
+
       if (res.ok) {
         toast.success("Message sent successfully 🚀");
         setFormData({ name: "", email: "", message: "" });
@@ -40,6 +49,7 @@ export default function Contact() {
         toast.error("Failed to send message ❌");
       }
     } catch (error) {
+      toast.dismiss(toastId);
       toast.error("Server error ❌");
     }
 
@@ -109,7 +119,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-white py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg shadow-md hover:shadow-blue-500/30 active:scale-[0.98]"
+            className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-white py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg shadow-md hover:shadow-blue-500/30 active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
