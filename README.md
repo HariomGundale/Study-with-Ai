@@ -10,7 +10,7 @@
 
 ## 📋 Table of Contents
 
-- [🎯 Live Demo](#live-demo)
+- [🎯 Live Demo](#study-with-ai-7.vercel.app)
 - [📌 Problem Statement](#problem-statement)
 - [💡 Solution Overview](#solution-overview)
 - [🌍 SDG-4 Alignment](#sdg-4-alignment)
@@ -403,15 +403,58 @@ vercel
 
 ## 👥 Team
 
-### Contributors
-
-- **Hariom Gundale** - Lead Developer & Full-Stack Engineer
-  - GitHub: [@HariomGundale](https://github.com/HariomGundale)
-  - Role: Architecture, Frontend, Backend, AI Integration
-
-*Built with ❤️ for the SDG-4 Hackathon*
+### 🚀 Team StudyWith AI  
+Built with ❤️ for the **SDG-4 (Quality Education) Hackathon**
 
 ---
+
+### 🧑‍💼 Sumit Kotalwar  
+**Team Leader & Project Strategist**  
+- Vision & Product Direction  
+- Hackathon Planning & Coordination  
+- SDG-4 Alignment & Impact Strategy  
+- Feature Planning & System Design  
+
+GitHub: https://github.com/sumitkotalwar1  
+
+---
+
+### 👨‍💻 Hariom Gundale  
+**Lead Developer & Full-Stack Engineer**  
+- System Architecture  
+- Frontend Development (Next.js + Tailwind CSS)  
+- Backend API Routes  
+- Google Gemini AI Integration  
+- Quiz Engine & Logic Implementation  
+- PDF Export System  
+- Deployment & Optimization  
+
+GitHub: https://github.com/HariomGundale  
+
+---
+
+### 🧠 Varad Gundale  
+**Backend Support & Testing Engineer**  
+- API Testing & Validation  
+- UI Testing & Responsiveness Checks  
+- Feature Debugging  
+- Performance Optimization Support  
+
+GitHub: https://github.com/varadgundale2006  
+
+---
+
+### 🌍 Our Mission
+
+We built **StudyWith AI** to promote accessible, intelligent, and scalable education solutions aligned with:
+
+> **United Nations Sustainable Development Goal 4 — Quality Education**
+
+Our platform demonstrates how Artificial Intelligence can enhance learning efficiency, knowledge retention, and personalized education for students worldwide.
+
+---
+
+⭐ If you like this project, give it a star on GitHub!
 
 ## 📄 License
 
