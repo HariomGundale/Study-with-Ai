@@ -4,7 +4,7 @@
 
 > **AI-Powered Smart Learning Platform aligned with SDG-4 (Quality Education)**
 
-![Study-with-Ai Banner](https://via.placeholder.com/1200x300/1e3a8a/ffffff?text=StudyWith+AI+-+Transform+Your+Learning)
+![Study-with-Ai Banner]([https://via.placeholder.com/1200x300/1e3a8a/ffffff?text=StudyWith+AI+-+Transform+Your+Learning](https://study-with-ai-7.vercel.app/))
 
 ---
 
@@ -33,7 +33,7 @@
 
 ## 🎯 Live Demo
 
-**🔗 Visit Live Application:** [StudyWith AI Live](https://studywithia.vercel.app)
+**🔗 Visit Live Application:** [StudyWith AI Live]([https://studywithia.vercel.app](https://study-with-ai-7.vercel.app/))
 
 > *Experience the future of learning with AI-powered study tools*
 
