@@ -1,225 +1,200 @@
-# 🎓 StudyWith AI
+# 🎓 StudyWith AI  
 
-## Empowering Education Through Intelligent Learning
+## 🚀 Empowering Education Through Intelligent Learning  
 
-> **AI-Powered Smart Learning Platform aligned with SDG-4 (Quality Education)**
+> AI-Powered Smart Learning Platform aligned with **SDG-4 (Quality Education)**  
 
-![Study-with-Ai Banner]([https://via.placeholder.com/1200x300/1e3a8a/ffffff?text=StudyWith+AI+-+Transform+Your+Learning](https://study-with-ai-7.vercel.app/))
+![StudyWith AI Banner](./public/banner.png)
+
+---
+
+## 🏁 Hackathon Submission Details
+
+- **Hackathon Theme:** SDG-4 (Quality Education)
+- **Project Category:** AI in Education
+- **Deployment:** Vercel
+- **Status:** Production Ready 🚀
+- **Tech:** Next.js + Gemini AI
 
 ---
 
 ## 📋 Table of Contents
 
-- [🎯 Live Demo](#study-with-ai-7.vercel.app)
-- [📌 Problem Statement](#problem-statement)
-- [💡 Solution Overview](#solution-overview)
-- [🌍 SDG-4 Alignment](#sdg-4-alignment)
-- [✨ Core Features](#core-features)
-- [📸 Screenshots](#screenshots)
-- [🛠️ Tech Stack](#tech-stack)
-- [📁 Folder Structure](#folder-structure)
-- [🚀 Installation & Setup](#installation--setup)
-- [⚙️ Environment Variables](#environment-variables)
-- [▶️ How to Run Locally](#how-to-run-locally)
-- [🌐 Deployment](#deployment)
-- [🔮 Future Improvements](#future-improvements)
-- [👥 Team](#team)
-- [📄 License](#license)
-- [🤝 Contributing](#contributing)
-- [💥 Impact Statement](#impact-statement)
-- [🏆 Hackathon Pitch](#hackathon-pitch)
+- [🎯 Live Demo](#-live-demo)
+- [📌 Problem Statement](#-problem-statement)
+- [💡 Solution Overview](#-solution-overview)
+- [🌍 SDG-4 Alignment](#-sdg-4-alignment)
+- [✨ Core Features](#-core-features)
+- [📸 Screenshots](#-screenshots)
+- [🛠️ Tech Stack](#-tech-stack)
+- [📁 Folder Structure](#-folder-structure)
+- [🚀 Installation & Setup](#-installation--setup)
+- [⚙️ Environment Variables](#-environment-variables)
+- [▶️ Run Locally](#-run-locally)
+- [🌐 Deployment](#-deployment)
+- [📈 Scalability](#-scalability--future-scope)
+- [👥 Team](#-team)
+- [📄 License](#-license)
+- [💥 Impact Statement](#-impact-statement)
+- [🏆 Hackathon Pitch](#-hackathon-pitch)
 
 ---
 
 ## 🎯 Live Demo
 
-**🔗 Visit Live Application:** [StudyWith AI Live]([https://studywithia.vercel.app](https://study-with-ai-7.vercel.app/))
+🔗 **Live Application:**  
+[StudyWith AI Live](https://study-with-ai-7.vercel.app/)
 
-> *Experience the future of learning with AI-powered study tools*
+Experience the future of AI-powered learning.
 
 ---
 
 ## 📌 Problem Statement
 
-### The Challenge
+Students face:
 
-Traditional learning methods often leave students struggling with:
-- **Information Overload**: Lengthy study materials and notes that are hard to digest
-- **Inefficient Learning**: No structured guidance on what's important
-- **Limited Assessment**: Generic quizzes that don't align with curriculum standards
-- **Accessibility Gap**: Quality education resources not universally available
-- **Knowledge Retention**: Passive learning without interactive engagement
+- 📚 Information overload  
+- ❌ Lack of structured summaries  
+- 📝 Non-curriculum-aligned quizzes  
+- 🌍 Accessibility gap  
+- 🧠 Low retention from passive learning  
 
-The educational sector needs intelligent, accessible, and curriculum-aligned solutions to enhance learning efficiency and democratize quality education.
+Education needs intelligent, curriculum-aligned, accessible AI tools.
 
 ---
 
 ## 💡 Solution Overview
 
-**StudyWith AI** is a full-stack AI-powered educational platform that revolutionizes how students study by:
+**StudyWith AI** is a full-stack AI-powered platform that:
 
-✅ **Intelligent Note Processing**: Transform lengthy study notes into concise summaries, key points, and simplified explanations using Google Gemini AI
+- Converts notes into summaries instantly
+- Extracts key points automatically
+- Simplifies complex topics
+- Generates CBSE-aligned quizzes
+- Tracks performance with analytics
+- Exports notes as PDF
+- Provides instant feedback
+- Works fully responsive across devices
 
-✅ **Curriculum-Aligned Assessments**: Generate CBSE-aligned quizzes tailored to specific classes (10th, 12th) and difficulty levels
-
-✅ **Interactive Learning**: Real-time quiz feedback, progress tracking, and performance analytics
-
-✅ **Seamless Experience**: Export notes as PDF, session persistence, and fully responsive design
-
-✅ **Accessible & Scalable**: Cloud-deployed on Vercel, ready for deployment across educational institutions
+Built using **Google Gemini AI + Next.js**.
 
 ---
 
 ## 🌍 SDG-4 Alignment
 
-### Sustainable Development Goal 4: Quality Education
+### Sustainable Development Goal 4 — Quality Education
 
-StudyWith AI directly contributes to **SDG-4** by:
+StudyWith AI promotes:
 
-| Goal | How We Address It |
-|------|-------------------|
-| **Ensure inclusive and equitable quality education** | Free AI-powered tools democratize access to quality learning resources |
-| **Build and upgrade inclusive and safe education facilities** | Digital-first platform removes geographical barriers |
-| **Increase the number of qualified teachers and support personnel** | AI tutor supplements traditional education, supporting teachers |
-| **Ensure learners acquire foundational and higher-order thinking skills** | Interactive quizzes and simplified explanations develop critical thinking |
-| **Make education gender-inclusive and accessible to all** | Platform is accessible to all learners irrespective of gender, location, or background |
+| SDG Objective | Our Contribution |
+|--------------|------------------|
+| Inclusive Education | Free AI-powered tools |
+| Equal Access | Web-based scalable solution |
+| Quality Learning | AI-driven comprehension |
+| Skill Development | Interactive quizzes |
+| Accessibility | Mobile-first design |
 
-**Our Commitment**: StudyWith AI makes quality education smarter, more accessible, and AI-empowered for every learner.
+We believe AI can democratize education globally.
 
 ---
 
 ## ✨ Core Features
 
-### 🧠 **AI-Powered Note Summarization**
-- **Summary Generation**: Create concise summaries of lengthy study materials
-- **Key Points Extraction**: Automatically identify and highlight important concepts
-- **Simplified Explanations**: Break down complex topics into easy-to-understand language
-- **Instant Processing**: Generate insights in seconds using Google Gemini API
+### 🧠 AI Note Summarizer
+- Summary generation
+- Key points extraction
+- Simplified explanations
+- Instant processing using Gemini API
 
-### 📝 **CBSE-Aligned Quiz Generator**
-- **Curriculum-Based**: Quizzes aligned with CBSE standards
-- **Class Selection**: Generate quizzes for Class 10th, 12th, and more
-- **Difficulty Levels**: Easy, Medium, and Hard question variations
-- **Smart Question Generation**: AI creates relevant, contextual questions
+### 📝 CBSE-Aligned Quiz Generator
+- Standard-based (10th, 12th)
+- Difficulty selection
+- AI-generated MCQs
+- Curriculum alignment
 
-### ⏱️ **Interactive Quiz Experience**
-- **30-Second Timer**: Time-bound questions to enhance focus
-- **Real-Time Feedback**: Instant answer evaluation and explanations
-- **Progress Tracking**: Visual progress bar shows quiz completion status
-- **Score Analytics**: Detailed performance metrics and percentage calculation
+### ⏱️ Interactive Quiz Engine
+- 30-second timer per question
+- Instant feedback
+- Correct answer highlighting
+- Progress bar
+- Percentage calculation
 
-### 💾 **Learning Session Management**
-- **Session History**: Track all quiz attempts using sessionStorage
-- **Performance Analytics**: View scores, time taken, and accuracy metrics
-- **Session Persistence**: Resume learning from where you left off
+### 💾 Session Tracking
+- sessionStorage persistence
+- Quiz history
+- Score tracking
 
-### 📄 **Export & Share**
-- **PDF Export**: Download generated notes in professional PDF format
-- **Shareable Content**: Easy sharing of summaries and quiz results
-- **Print-Friendly**: Optimized layouts for printing and offline access
+### 📄 Export as PDF
+- Professional layout
+- Topic name included
+- Result type included
+- Downloadable instantly
 
-### 📧 **Communication Hub**
-- **Contact Form**: Direct communication with the support team
-- **Email Integration**: Powered by Resend API for reliable message delivery
-- **Instant Notifications**: Get responses and updates directly
-
-### 🎨 **Premium User Experience**
-- **Dark Mode + Blue Premium UI**: Eye-friendly, modern design
-- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
-- **Smooth Animations**: Framer Motion for engaging transitions
-- **Animated Stats**: Dynamic visualization of learning metrics
-- **Testimonials Section**: Real user success stories and impact
+### 🎨 Premium UI
+- Dark + Blue theme
+- Smooth animations (Framer Motion)
+- Animated stats
+- Testimonials
+- Fully responsive
 
 ---
 
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](https://via.placeholder.com/800x500/1e3a8a/ffffff?text=Dashboard+-+Note+Summarizer)
+![Dashboard](./public/Dashboard.png)
 
 ### Quiz Generator
-![Quiz Interface](https://via.placeholder.com/800x500/1e3a8a/ffffff?text=Quiz+Generator+-+CBSE+Aligned)
+![Quiz](./public/Quiz.png)
 
-### Results & Analytics
-![Results Page](https://via.placeholder.com/800x500/1e3a8a/ffffff?text=Results+Page+-+Score+Analytics)
-
-### Mobile Responsive
-![Mobile View](https://via.placeholder.com/400x600/1e3a8a/ffffff?text=Mobile+Responsive+Design)
+### Mobile View
+![Mobile](./public/mobile.png)
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend & Full-Stack Framework
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+### Framework
+- Next.js (App Router)
+- TypeScript
+- React
 
-### Styling & Animation
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+### Styling & UI
+- Tailwind CSS
+- Framer Motion
 
 ### AI & APIs
-![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Resend](https://img.shields.io/badge/Resend-000000?style=for-the-badge&logo=resend&logoColor=white)
+- Google Gemini API
+- Resend API
 
-### Libraries & Tools
-- **react-hot-toast**: Toast notifications for user feedback
-- **jsPDF**: PDF export functionality
-- **Vercel**: Cloud deployment and hosting
-
-### Architecture
-- **Next.js App Router**: Modern, file-based routing system
-- **API Routes**: Backend endpoints for AI processing
-- **Server Components**: Optimized performance with Next.js 13+
-- **Gemini SDK**: Seamless AI integration for text processing
-- **Environment Variables**: Secure configuration management
+### Tools
+- react-hot-toast
+- jsPDF
+- Vercel
 
 ---
 
 ## 📁 Folder Structure
 
+
 ```
 StudyWith-Ai/
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx              # Root layout with metadata
-│   │   ├── page.tsx                # Home page
-│   │   ├── api/
-│   │   │   ├── summarize/          # AI summarization endpoint
-│   │   │   ├── quiz/               # Quiz generation endpoint
-│   │   │   └── contact/            # Email contact endpoint
-│   │   ├── summarizer/
-│   │   │   └── page.tsx            # Note summarizer page
-│   │   ├── quiz/
-│   │   │   └── page.tsx            # Quiz interface page
-│   │   └── results/
-│   │       └── page.tsx            # Quiz results page
-│   ├── components/
-│   │   ├── Navbar.tsx              # Navigation component
-│   │   ├── Hero.tsx                # Hero section
-│   │   ├── Features.tsx            # Features showcase
-│   │   ├── Stats.tsx               # Animated statistics
-│   │   ├── Testimonials.tsx        # User testimonials
-│   │   ├── Footer.tsx              # Footer
-│   │   ├── QuizCard.tsx            # Quiz question component
-│   │   └── ExportPDF.tsx           # PDF export handler
-│   ├── utils/
-│   │   ├── gemini.ts               # Gemini API integration
-│   │   ├── validation.ts           # Input validation
-│   │   └── storage.ts              # Session storage utilities
-│   └── styles/
-│       └── globals.css             # Global styles
+├── app/
+│ ├── layout.tsx
+│ ├── page.tsx
+│ ├── dashboard/
+│ ├── Quiz/
+│ ├── About/
+│ ├── Contact/
+│ └── api/
+│ ├── summarize/
+│ ├── quiz-generator/
+│ └── message/
+├── components/
 ├── public/
-│   ├── images/                     # Static images and icons
-│   └── fonts/                      # Custom fonts
-├── .env.local                      # Environment variables (local)
-├── .env.example                    # Example env template
-├── next.config.js                  # Next.js configuration
-├── tailwind.config.ts              # Tailwind CSS config
-├── tsconfig.json                   # TypeScript config
-├── package.json                    # Dependencies
-└── README.md                       # Project documentation
+├── .env.local
+├── package.json
+└── README.md
 ```
 
 ---
@@ -272,7 +247,8 @@ Create a `.env.local` file in the root directory with the following variables:
 
 ```env
 # Google Gemini API
-NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
+QUIZ_API_KEY=your_gemini_api_key_here_seperate_for_quiz_generation
 
 # Email Service (Resend)
 RESEND_API_KEY=your_resend_api_key_here
@@ -363,13 +339,14 @@ vercel
 
 1. Go to Project Settings → Environment Variables
 2. Add the following:
-   - `NEXT_PUBLIC_GEMINI_API_KEY`: Your Gemini API key
+   - `GEMINI_API_KEY`: Your Gemini API key
+   - `QUIZ_API_KEY`: Your Gemini API key for quiz generator
    - `RESEND_API_KEY`: Your Resend API key
 3. Save and redeploy
 
 ### Post-Deployment
 
-- Your application will be live at `https://your-project.vercel.app`
+- Your application will be live at `https://study-with-ai-7.vercel.app/`
 - Enable automatic deployments from GitHub
 - Set up custom domain (optional) in Project Settings
 
@@ -415,7 +392,7 @@ Built with ❤️ for the **SDG-4 (Quality Education) Hackathon**
 - SDG-4 Alignment & Impact Strategy  
 - Feature Planning & System Design  
 
-GitHub: https://github.com/sumitkotalwar1  
+GitHub: https://github.com/Sumit772006  
 
 ---
 
@@ -440,7 +417,7 @@ GitHub: https://github.com/HariomGundale
 - Feature Debugging  
 - Performance Optimization Support  
 
-GitHub: https://github.com/varadgundale2006  
+GitHub: https://github.com/varadgundale2006-wq  
 
 ---
 
