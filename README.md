@@ -387,7 +387,9 @@ Built with ❤️ for the **SDG-4 (Quality Education) Hackathon**
 
 ### 🧑‍💼 Sumit Kotalwar  
 **Team Leader & Project Strategist**  
-- Vision & Product Direction  
+- Vision & Product Direction
+- System Architecture  
+- Frontend Development (Next.js + Tailwind CSS)  
 - Hackathon Planning & Coordination  
 - SDG-4 Alignment & Impact Strategy  
 - Feature Planning & System Design  
@@ -397,9 +399,7 @@ GitHub: https://github.com/Sumit772006
 ---
 
 ### 👨‍💻 Hariom Gundale  
-**Lead Developer & Full-Stack Engineer**  
-- System Architecture  
-- Frontend Development (Next.js + Tailwind CSS)  
+**Lead Developer & Full-Stack Engineer**    
 - Backend API Routes  
 - Google Gemini AI Integration  
 - Quiz Engine & Logic Implementation  
