@@ -17,7 +17,7 @@ export default function About() {
         </h1>
 
         {/* Content Card */}
-        <div className="bg-slate-900/60 backdrop-blur-md border border-slate-800 rounded-2xl p-5 sm:p-8 shadow-lg space-y-6">
+        <div className="bg-slate-900/60 backdrop-blur-md border border-blue-500 rounded-2xl p-5 sm:p-8 shadow-lg space-y-6">
 
           <p className="text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed">
             StudyWith AI is an intelligent learning platform designed to simplify

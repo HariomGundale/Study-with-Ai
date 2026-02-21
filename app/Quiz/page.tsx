@@ -135,7 +135,7 @@ export default function QuizPage() {
               placeholder="Standard (e.g., 10th, 12th)"
               value={standard}
               onChange={(e) => setStandard(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-sm sm:text-base"
+              className="w-full p-3 rounded-xl bg-slate-800 border border-blue-500 text-sm sm:text-base"
             />
 
             <input
@@ -143,13 +143,13 @@ export default function QuizPage() {
               placeholder="Enter Topic (e.g., Algebra)"
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-sm sm:text-base"
+              className="w-full p-3 rounded-xl bg-slate-800 border border-blue-500 text-sm sm:text-base"
             />
 
             <select
               value={difficulty}
               onChange={(e) => setDifficulty(e.target.value)}
-              className="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-sm sm:text-base"
+              className="w-full p-3 rounded-xl bg-slate-800 border border-blue-500 text-sm sm:text-base"
             >
               <option value="easy">Easy</option>
               <option value="medium">Medium</option>

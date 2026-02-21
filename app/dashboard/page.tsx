@@ -88,12 +88,12 @@ export default function Dashboard() {
           placeholder="Enter Topic (optional)"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
-          className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 sm:p-4 mb-6 text-sm sm:text-base"
+          className="w-full bg-slate-900 border border-blue-500 rounded-xl p-3 sm:p-4 mb-6 text-sm sm:text-base"
         />
 
         {/* Textarea Glow Container */}
         <div className="relative w-full mb-8">
-          <div className="relative bg-slate-900/70 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-slate-700 p-4 sm:p-6 shadow-lg">
+          <div className="relative bg-slate-900/70 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-blue-500 p-4 sm:p-6 shadow-lg">
             <textarea
               rows={8}
               placeholder="Paste your study notes..."

@@ -75,7 +75,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-slate-900/60 backdrop-blur-lg border border-slate-800 shadow-xl rounded-2xl sm:rounded-3xl p-6 sm:p-10 space-y-5 sm:space-y-6"
+          className="bg-slate-900/60 backdrop-blur-lg border border-blue-500 shadow-xl rounded-2xl sm:rounded-3xl p-6 sm:p-10 space-y-5 sm:space-y-6"
         >
           <input
             type="text"

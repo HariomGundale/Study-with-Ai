@@ -113,7 +113,7 @@ export default function Footer() {
 
             <a
               href="mailto:hariomgundale21@gmail.com"
-              className="bg-slate-800 p-3 rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-105"
+              className="bg-slate-800 p-3 rounded-xl hover:bg-green-600 transition-all duration-300 hover:scale-105"
             >
               <Mail size={18} />
             </a>
