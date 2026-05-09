@@ -43,7 +43,9 @@ export default function Dashboard() {
     if (!result) return;
 
     const doc = new jsPDF();
+
     const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(18);
@@ -55,7 +57,7 @@ export default function Dashboard() {
       `Generated ${resultType.toUpperCase()} Document`,
       pageWidth / 2,
       28,
-      { align: "center" }
+      { align: "center" },
     );
 
     doc.line(20, 32, pageWidth - 20, 32);
@@ -64,7 +66,19 @@ export default function Dashboard() {
     doc.text(`Date: ${new Date().toLocaleDateString()}`, 20, 52);
 
     const lines = doc.splitTextToSize(result, 170);
-    doc.text(lines, 20, 65);
+
+    let y = 65;
+    const lineHeight = 7;
+
+    lines.forEach((line: string | string[]) => {
+      if (y > pageHeight - 20) {
+        doc.addPage();
+        y = 20;
+      }
+
+      doc.text(line, 20, y);
+      y += lineHeight;
+    });
 
     doc.save(`StudyWithAI-${topic || "Output"}-${resultType}.pdf`);
   };
